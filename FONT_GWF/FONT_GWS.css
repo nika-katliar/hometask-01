@@ -1,0 +1,16 @@
+body {
+    width: 420px;
+    margin: auto;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    color: rgb(6, 6, 87);
+}
+
+h1 {
+    font-weight: 400;
+}
+
+div {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rgb(88, 15, 88);
+}
