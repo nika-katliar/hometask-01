@@ -1,0 +1,17 @@
+.box {
+    background:
+    url('img/leftap.png') no-repeat left top,
+    url('img/rightap.png') no-repeat right top,
+    url('img/left_bottom.png') no-repeat left bottom,
+    url('img/right_bottom.png') no-repeat right bottom,
+    url('img/line1.png') repeat-y left,
+    url('img/line2.png') repeat-x,
+    url('img/line3.png') repeat-x bottom,
+    url('img/line4.png') repeat-y right
+}
+
+.text {
+    white-space: pre-wrap;
+    font-size: 2em;
+    padding: 30px 50px;
+}
