@@ -1,0 +1,83 @@
+body {
+    font-family:sans-serif
+    }
+    .header {
+    
+    background-color: #ade6da;
+    padding:10px;
+    color:#151bfb;
+    font-size: 22px; 
+    text-align: center;
+    }
+    .menu {
+    width:160px; 
+    float:left;	
+    
+    }
+    .menu p {
+    padding-left:20px;
+    }
+    .content {
+    background: #fff url('img/bol.png') top right repeat-y;
+    padding-left: 10px; 
+    margin-left:170px;
+    
+    }
+    
+    .content .p {
+    font-weight: bolder ;
+    font-size:22px;
+    margin-top: 0;
+    padding-top:20px;
+    
+    }
+    .content img {
+    float:left; 
+    padding-right: 20px;
+    padding-bottom:15px;
+    }
+    
+    .footer {
+    background-color: #add8e6; 
+    padding:20px; 
+    color:#151bfb; 
+    font-size: 24px; 
+    text-align:center;
+    }
+    .conteiner {
+        background-color:#e7c3fc ; 
+    }
+    
+    
+    media all and (max-width:600px)
+    {
+      .menu {
+      width:100%;
+      display:block;
+       float:none; 
+      }
+      .menu p {
+        margin-top:0;
+      padding-left:20px;
+      }
+      .content {
+      background: #fff ;
+     
+      margin-left:0;
+      }
+    
+      .content .p {
+      font-weight: bolder ;
+      font-size:22px;
+      margin-top: 0;
+      padding-top:20px;
+    
+      }
+      .content img {
+        padding-right: 20px;
+        padding-bottom:15px;
+      }
+      .conteiner {
+        background-color:#f0e68c ; 
+      }
+    } 
