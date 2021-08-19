@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "Bebas Neue Cyrillic";
+  src: local("Bebas Neue Cyrillic"), local("BebasNeueCyrillic"),
+    url("BebasNeueCyrillic.woff2") format("woff2"),
+    url("../fons/BebasNeueCyrillic.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue Cyrillic";
+  src: local("Bebas Neue Cyrillic"), local("BebasNeueCyrillic"),
+    url("BebasNeueCyrillic.woff2") format("woff2"),
+    url("BebasNeueCyrillic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box; /*для всех элементов, позволяет правильно считать ширину и высоту*/
+}
+body {
+  font-family: "Roboto", sans-serif; /*применили шрифт взяли его в https://fonts.google.com/ вбили roboto скопировала ссылку в сss*/
+}
+.header {
+  padding-top: 12px; /*сделали внутренние отступы в шапке*/
+  padding-bottom: 12px;
+  background-color: #635854;
+  border-bottom: 4px solid #3596f5;
+}
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex; /*сделали элемент гибким*/
+  justify-content: space-between; /*расставила элемент по краям*/
+  align-items: center;
+}
+.navbar-menu {
+  margin: 0; /*отключаем внешние отступы*/
+  padding: 0; /*отключаем внутренние отступы*/
+  list-style: none; /*отключаем точки списка*/
+  display: flex;
+  text-align: center; /*выравниваем текст по центру*/
+}
+.navbar-item {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.navbar-link {
+  text-decoration: none; /*убираем подчеркивание ссылок */
+  color: #fff;
+}
+.navbar-contacts {
+  text-align: right;
+}
+.navbar-text {
+  display: block;
+  color: #fff;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.navbar-phone {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+/*начинаем работу со втрой частью, зданием.  */
+.main {
+  max-width: 1280px; /*ставим картинку по отношению к логотипу,копируя из .navbar */
+  margin: auto;
+  padding-top: 54px;
+  display: flex; /*ставим flex чтобы текст сдвинулся вверх */
+}
+.main-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*ставим текст по центру блока */
+  justify-content: space-between; /*разбрасываем одинаково между друг другом */
+}
+.home-image path {
+  /*убираем прозрачность, но так как нам нужно при наведении на этаж что бы он выделялся используем ниже .home-image path:hover */
+  opacity: 0;
+  cursor: pointer; /*это выделение пальцем*/
+}
+
+.home-image path:hover {
+  opacity: 1;
+}
+/*закончили работу со втрой частью, здания.  */
+path.current-floor{
+  opacity: 1;
+}
+.counter-grop {
+  /*оформляем блок со с  */
+  display: flex;
+  flex-direction: column; /* чтобы стрелки стали друг за другом  */
+  align-items: center;
+}
+.counter-button {
+  background-color: #fff;
+  border: none;
+  cu
+}
+/* чтобы развернуть предмет нужно к непосредственно группе например кнопке применить transform:rotateX180eg  это по оси x*/
+/* работаем с блоком выбераем этаж, работаем со шрифтом, цветом берем все из фигмы  */
+.main-title {
+  font-family: "Bebas Neue Cyrillic", sans-serif;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 44px;
+  color: #635854;
+  margin: 0;
+}
+/* работаем с блоком выбераем этаж, работаем со шрифтом, цветом берем все из фигмы  */
+.counter {
+  color: #635854;
+  font-size: 124px;
+  font-family: "Bebas Neue Cyrillic", sans-serif;
+  margin top: 10px;
+}
+/* работаем с блоком "смотреть квартиры ниже", работаем со шрифтом, цветом берем все из фигмы  */
+  .button-primary{ 
+  background: #3596F5;
+  border-radius: 6px;
+  color:#fff;
+  border: none;
+  padding: 16px 36px;
+  cursor: pointer;
+}
